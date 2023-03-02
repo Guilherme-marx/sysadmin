@@ -3,7 +3,7 @@
 
 <head>
     <link rel="icon" href="/my-app/public/logo512.png" />
-    <link rel="stylesheet" href="/my-app/public/estilo.css">
+    <link rel="stylesheet" href="/estilo.css">
     <link rel="manifest" href="/my-app/public/manifest.json" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,64 +22,90 @@
 
 <body>
     <div class="principal">
-        <header class="painel1">
-            <div class="container1">
-                <ul>
-                    <a href="/my-app/public/home.html">home</a>
-                    <a href="/my-app/public/index.html">cadastro</a>
-                </ul>
-                <h1 class="logo" name="logo">|SysAdmin</h1>
+        <header class="container-header">
+            <div class="container">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/home.html" class="selec">Home</a></li>
+                        <li><a href="/index.html">Cadastro</a></li>
+                    </ul>
+                    <div class="logo">
+                        <span class="border-height"></span>
+                        <h1 name="logo">Sys<span>Admin</span></h1>
+                    </div>
+                </nav>
             </div>
         </header>
-        <div class="container2" style="margin-top: -55px;">
-            <div class="infor-cadastro">
-                <div class="content-cad">
-                    <section class="caption">
-                        <form action="/my-app/public/home.html">
-                            <div class="input">
-                                <div class="painelInfor">
-                                    <h1>Olá, Seja bem vindo ao SysAdmin</h1>
-                                    <p>No SysAdmin você cadastra os usuários da sua empresa de forma segura e rápida.</p>
-                                    <br>
-                                    <div class="formulario1">
-                                        <form action="/my-app/public/home.html"></form>
-                                        <button>cadastrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                </div>
+        <section class="container content-white">
+            <h3>Olá, Seja Bem Vindo ao SysAdmin</h3>
+            <div class="texto-explicacao">
+                <p>No SysAdmin você cadastra os usuários da sua empresa
+                    de forma segura e rápida.</p>
             </div>
-        </div>
-        <br>
-        <section>
-
-            <main class="tabela">
-                <div>
-                    <caption>Lista de cadastrados</caption>
-                    <table class="caixa">
-                        <tr>
-                            <td>Nome</td>
-                            <td>Nome do pai</td>
-                            <td>Nome da mãe</td>
-                            <td>Data de nascimento</td>
-                        </tr>
-                        <tr>
-                            <td>Lucas Lima</td>
-                            <td>Pedro Henrique</td>
-                            <td>Maria cecilia</td>
-                            <td>20/01/2004</td>
-                        </tr>
-                    </table>
+            <div class="botoes">
+                <button type="submit" class="cadastrar"><a class="cadastrar" href="/index.html">cadastrar</a></button>
+            </div>
+        </section>
+        <section class="container content-white">
+            <main class="table">
+                <div class="tabela-cadastrados">
+                    <label>Lista de cadastrados</label>
+                    <div>
+                        <table class="content-table">
+                            <tr class="filter">
+                                <td>Nome</td>
+                                <td>Nome do pai</td>
+                                <td>Nome da mãe</td>
+                                <td>Data de nascimento</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Lucas Lima</td>
+                                <td>Pedro Henrique</td>
+                                <td>Maria cecilia</td>
+                                <td>20/01/2004</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </main>
         </section>
     </div>
-    <section class="container-back">
-        <div class="background"></div>
-    </section>
-    <div id="root"></div>
     <footer>Copyright © 2023</footer>
 </body>
 <script src="/my-app/src/App.js"></script>
