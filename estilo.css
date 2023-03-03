@@ -389,7 +389,7 @@ tr {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 375px) {
     body {
         line-height: 1;
         width: 100.1%;
@@ -438,7 +438,7 @@ tr {
         top: -60px;
         border-radius: 20px;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 47px;
         width: 81%;
     }
 
@@ -528,9 +528,9 @@ tr {
 
     .botoes {
         display: flex;
-        gap: 59px;
-        margin-top: 0px;
-        margin-left: 0px;
+        /* gap: 59px; */
+        /* margin-top: 0px; */
+        /* margin-left: 0px; */
         padding: 11px;
         flex-wrap: wrap;
         flex-direction: row;
@@ -570,29 +570,57 @@ tr {
         border: none;
         padding: 4.1px 15px;
     }
+
+    .input-main {
+        width: 46%;
+        padding-right: 48px;
+        position: relative;
+        border-radius: 3em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 10px;
+    }
+
+    .input-data {
+        border-radius: 1em;
+        position: relative;
+        display: flex;
+        width: 64.2%;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+        font-size: 11px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .formulario {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
+    .label {
+        font-size: 9px;
+        margin-left: 35px;
+    }
+
+    .botao1 {
+        display: flex;
+        gap: 13px;
+        margin-top: -30px;
+        margin-left: 116px;
+        padding: 11px;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
 }
 
 /* area cadastro */
-
-.input-main {
-
-    border-radius: 3em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 9px;
-    padding-right: 49px;
-    font-size: 10px
-}
-.input-data {
-    border-radius: 1em;
-    width: 100%;
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
-    padding-right: 1px;
-    font-size: 11px;
-}
-
-h2{
-font-size: 0.9rem;
-padding: 12px;
-}
