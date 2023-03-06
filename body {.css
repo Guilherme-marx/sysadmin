@@ -4,8 +4,7 @@ h2 {
 }
 
 
-media (max-width: 375px)
-.formulario {
+media (max-width: 375px) .formulario {
     /* padding: 2px; */
     gap: 0px;
     width: 100%;
