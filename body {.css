@@ -136,9 +136,6 @@ tr {
 
 .botoes {
     display: flex;
-    /* gap: 59px; */
-    /* margin-top: 0px; */
-    /* margin-left: 0px; */
     padding: 11px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -150,16 +147,11 @@ ul li {
     margin-right: 9px;
 }
 
-
 .logo {
     display: flex;
     line-height: 15px;
     margin-top: 22px;
 }
-
-
-
-
 
 .cadastrar {
     background: #2FC6A1;
