@@ -360,16 +360,26 @@ tbody {
     margin: auto;
 }
 
-.item {
+.filter {
+    gap: 165px;
+    font-weight: 700;
+    margin: 10px;
     display: flex;
-    gap: 3.89em;
-    color: #39393d;
     flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 11px;
+    margin-right: 160px;
 }
 
-.filter {
-    gap: 120px;
-    font-weight: 700;
+.item {
+    display: flex;
+    gap: 108px;
+    color: #39393d;
+    flex-direction: row;
+    font-size: 18px;
+}
+.ajuste{
+margin-left: -2px;
 }
 
 tr {
@@ -523,7 +533,6 @@ h4 {
         align-items: flex-start;
         margin: auto;
         flex-direction: column;
-
     }
 
     .content-table {
@@ -606,7 +615,6 @@ h4 {
         flex-wrap: wrap;
         background: #242424;
         color: #b2b2b2;
-
     }
 
     h4 {
