@@ -274,42 +274,51 @@ h1>span {
 /* FORMULARIO */
 
 .formulario {
-    padding: 15px;
+    padding: 0px 2px;
     display: flex;
-    gap: 96px;
-    flex-direction: row;
     width: 100%;
+    gap: 30px 56px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+}
 
 .input-main {
     background: #D9D9D9;
     border-radius: 3em;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 9px;
-    padding-right: 46px;
+    padding: 10px 10px;
     border: none;
 }
 
-
-.botoes {
+.botao-cadastrar {
+    padding: 30px;
     display: flex;
-    gap: 59px;
-    margin-top: 72px;
-    margin-left: 257px;
-    padding: 27px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: end;
 }
+
+.botao1 {
+    display: flex;
+    gap: 33px;
+    padding: 21px;
+    flex-direction: row;
+    margin-left: 340px;
+    margin-top: 91px;
+}
+
 
 button {
     border-radius: 2rem;
     border: none;
     background: #b2b2b2;
     color: #494949;
-    padding: 6.1px 22px;
+    padding: 6.1px 42px;
 
 }
 
@@ -324,11 +333,18 @@ button {
 
 
 /* TABELA 2 */
+tbody {
+    padding: -80px;
+}
+
 .table {
-    padding: 42px 24px;
+    padding: 14px 0px;
     display: flex;
     width: 100%;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .content-table {
@@ -340,11 +356,8 @@ button {
 }
 
 .tabela-cadastrados {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
     margin: auto;
-    flex-direction: column;
-
 }
 
 .item {
@@ -368,6 +381,39 @@ tr {
 
 }
 
+/* footer */
+
+.footer-principal {
+    margin-bottom: 0px;
+    margin-top: 220px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #242424;
+    color: #b2b2b2;
+}
+
+.footer-final {
+    background: #0e0e0e;
+    font-size: 9px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 19px;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.texto-footer {
+    color: #b2b2b2;
+    text-align: center;
+}
 
 
 
@@ -378,7 +424,382 @@ tr {
 
 
 
-@media (max-width: 375px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+/* @media (max-width: 912px),
+(min-width:540px) {
+    body {
+        line-height: 1;
+        width: 100%;
+    }
+
+
+    tbody {
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        color: #FFFFFF;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+
+    h3 {
+        font-size: 0.9rem;
+        padding: 15px 0px 5px 7px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        width: 100%;
+    }
+
+
+    p {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+        font-weight: 100;
+        font-family: sans-serif;
+        color: #494949;
+        width: 84%;
+    }
+
+
+    .table {
+        padding: 7px 0px;
+        display: flex;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .tabela-cadastrados {
+        display: flex;
+        align-items: flex-start;
+        margin: auto;
+        flex-direction: column;
+
+    }
+
+    .content-table {
+        background: #E7E7E7;
+        border-radius: 7px;
+        display: flex;
+        width: 100%;
+    }
+
+    .filter {
+        gap: 107px;
+        font-weight: 700;
+        font-size: 13px;
+        margin-left: 7px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item {
+        display: flex;
+        gap: 3.5em;
+        color: #39393d;
+        align-items: stretch;
+        font-size: 14px;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+
+    tr {
+        display: flex;
+        margin: 9px;
+        font-family: 'Courier New', Courier, mono;
+        width: 82%;
+        font-size: 10px;
+    }
+
+
+    ul li {
+        margin-top: 43px;
+        margin-right: 25px;
+    }
+
+    .cadastrar {
+        background: #2FC6A1;
+        color: #fff;
+        font-size: smaller;
+        font-weight: bold;
+        /* padding: 5px 28px; 
+        text-decoration: none;
+        display: flex;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+
+    .botao-cadastrar {
+        display: flex;
+        gap: 13px;
+        padding: 11px;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer-principal {
+        margin-bottom: 0px;
+        margin-top: 551px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #242424;
+        color: #b2b2b2;
+
+    }
+
+    h4 {
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 36px;
+        padding: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 4px 8px;
+        font-weight: 100;
+        font-family: sans-serif;
+        color: #494949;
+        width: 100%;
+    }
+
+    .footer-final {
+        background: #0e0e0e;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .texto-footer {
+        color: #b2b2b2;
+        text-align: center;
+    }
+
+
+
+    .container-header {
+        width: 100%;
+        height: 153px;
+        background-color: #614DD8;
+    }
+
+    .container {
+        max-width: 726px;
+        width: 100%;
+        margin: 0 auto;
+        height: 62px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        line-height: 29px;
+        margin-top: 40px;
+    }
+
+    .border-height {
+        border-left: 2px solid #2FC6A1;
+        border-right: 3px;
+        padding-right: 3px;
+    }
+
+    h1 {
+        padding: 1px;
+        font-size: 2.3rem;
+        color: #FFFFFF;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+    }
+
+    h1>span {
+        color: #2FC6A1;
+        font-size: 2.3rem;
+    }
+
+    .content-white {
+        background-color: #fff;
+        position: relative;
+        top: -54px;
+        border-radius: 20px;
+        height: auto;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 0px 0px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .input-main {
+        width: 100%;
+        position: relative;
+        border-radius: 7em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+        font-size: 9px;
+    }
+
+
+    .label {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 24px;
+        gap: 2px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .botao1 {
+        display: flex;
+        gap: 13px;
+        margin-top: 61px;
+        margin-left: 191px;
+        padding: 11px;
+        flex-direction: row;
+    }
+
+    button {
+        border-radius: 1rem;
+        border: none;
+        padding: 7.1px 36px;
+    }
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 414px) {
     body {
         line-height: 1;
         width: 100.1%;
@@ -515,17 +936,6 @@ tr {
 
 
 
-    .botoes {
-        display: flex;
-        /* gap: 59px; */
-        /* margin-top: 0px; */
-        /* margin-left: 0px; */
-        padding: 11px;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-
     ul li {
         margin-top: 23px;
         margin-right: 9px;
@@ -534,8 +944,8 @@ tr {
 
     .logo {
         display: flex;
-        line-height: 0px;
-        margin-top: 29px;
+        line-height: 15px;
+        margin-top: 22px;
     }
 
 
@@ -560,8 +970,18 @@ tr {
         padding: 4.1px 15px;
     }
 
+    .formulario {
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px 0px;
+        width: 77%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
     .input-main {
-        width: 75%;
+        width: 120%;
         position: relative;
         border-radius: 3em;
         padding-top: 2px;
@@ -574,14 +994,7 @@ tr {
         padding: 12px;
     }
 
-    .formulario {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        width: 100%;
 
-    }
 
     .label {
         font-size: 9px;
@@ -591,14 +1004,50 @@ tr {
     .botao1 {
         display: flex;
         gap: 13px;
-        margin-top: -30px;
+        margin-top: 0px;
         margin-left: 116px;
         padding: 11px;
-        flex-wrap: wrap;
         flex-direction: row;
-
     }
 
-}
+    .botao-cadastrar {
+        display: flex;
+        gap: 13px;
+        padding: 11px;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+    }
 
-/* area cadastro */
+    .footer-principal {
+        margin-bottom: 0px;
+        margin-top: 220px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #242424;
+        color: #b2b2b2;
+    }
+
+    .footer-final {
+        background: #0e0e0e;
+        font-size: 9px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h4 {
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 19px;
+        padding: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .texto-footer {
+        color: #b2b2b2;
+        text-align: center;
+    }
+}
