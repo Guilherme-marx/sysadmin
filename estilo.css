@@ -333,64 +333,49 @@ button {
 
 
 /* TABELA 2 */
-tbody {
-    padding: -80px;
-}
-
-.table {
-    padding: 14px 0px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 10px;
-}
-
-.content-table {
-    background: #E7E7E7;
-    border-radius: 10px;
-    display: flex;
-    width: 100%;
-
-}
 
 .tabela-cadastrados {
-    display: grid;
-    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 9px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    /* padding: 20px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+/* table th,
+table td {
+    border: 1px solid #ccc; 
+    background: #d5d5d5;
+} */
+
+.content-table {
+    background: #d5d5d5;
+    border-radius: 8px;
 }
 
 .filter {
-    gap: 165px;
-    font-weight: 700;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 11px;
-    margin-right: 160px;
+    gap: 36px;
+    font-weight: 900;
+    margin-left: 12px;
 }
 
-.item {
-    display: flex;
-    gap: 108px;
-    color: #39393d;
-    flex-direction: row;
-    font-size: 18px;
-}
-
-.ajuste {
-    margin-left: -2px;
-}
-
-tr {
-    display: flex;
-    margin: 11px;
-    font-family: 'Courier New', Courier, mono;
-    justify-content: flex-start;
-    width: 100%;
-
-}
+.item {}
 
 /* footer */
 
@@ -524,31 +509,6 @@ h4 {
 
 
 
-    .tabela-cadastrados {
-        display: flex;
-        margin: auto;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-
-    .content-table {
-        background: #E7E7E7;
-        border-radius: 7px;
-        display: flex;
-        width: 100%;
-    }
-
-
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
-
     ul li {
         margin-top: 23px;
         margin-right: 9px;
@@ -665,48 +625,7 @@ h4 {
         text-align: center;
     }
 
-    .table {
-        padding: 17px 5px;
-        display: flex;
-        width: 100%;
-        margin: 0px;
-        justify-content: center;
-    }
 
-
-    .content-table {
-        background: #E7E7E7;
-        border-radius: 7px;
-        display: flex;
-        width: 100%;
-
-    }
-
-    .filter {
-        gap: 33px;
-        font-weight: 700;
-        font-size: 7px;
-        margin: 7px;
-    }
-
-    tr {
-        display: flex;
-        margin: 8px;
-        font-family: 'Courier New', Courier, mono;
-        width: 100%;
-        font-size: 10px;
-    }
-
-
-    .item {
-        display: flex;
-        gap: 4.2em;
-        color: #39393d;
-        align-items: stretch;
-        font-size: 6px;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
 }
 
 
