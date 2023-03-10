@@ -337,15 +337,23 @@ button {
 .tabela-cadastrados {
     border-collapse: collapse;
     width: 100%;
-    padding: 9px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 20px 0px;
+}
+
+.filter {
+    gap: 36px;
+    font-weight: 900;
+    margin-left: 12px;
+}
+
+table th,
+table td {
+    padding: 7px;
 }
 
 h2 {
     font-size: 1.5rem;
-    /* padding: 20px; */
+    padding: 10px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     width: 100%;
@@ -358,21 +366,15 @@ table {
     padding: 20px;
 }
 
-/* table th,
-table td {
-    border: 1px solid #ccc; 
-    background: #d5d5d5;
-} */
 
 .content-table {
     background: #d5d5d5;
     border-radius: 8px;
 }
 
-.filter {
-    gap: 36px;
-    font-weight: 900;
-    margin-left: 12px;
+.largura {
+    display: flex;
+    padding: 0px 15px;
 }
 
 /* .item {} */
@@ -562,10 +564,54 @@ h4 {
         font-size: 11px;
     }
 
-    h2 {
-        font-size: 0.9rem;
-        padding: 12px;
+    /* tabela */
+
+    .tabela-cadastrados {
+        border-collapse: collapse;
+        width: 100%;
+        padding: 20px 0px;
     }
+    
+    .filter {
+        gap: 36px;
+        font-weight: 900;
+        margin-left: 12px;
+    }
+    
+    table th,
+    table td {
+        padding: 7px;
+        font-size: 9px;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        padding: 10px 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        width: 100%;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    
+    .content-table {
+        background: #d5d5d5;
+        border-radius: 8px;
+    }
+    
+    .largura {
+        display: flex;
+        padding: 0px 15px;
+    }
+
+
+
 
 
     label {
