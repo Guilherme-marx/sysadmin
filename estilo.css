@@ -677,7 +677,7 @@ h4 {
 
 
 
-/* @media (max-width:820px) {
+/* @media (min-width:760px) {
     body {
         line-height: 1;
         width: 100%;
