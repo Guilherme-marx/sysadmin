@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from '../sysadmin/node_modules/@types/react'
+import ReactDOM from '../sysadmin/node_modules/@types/react-dom/client'
 import home from './pages/home'
 import './index.css'
 
