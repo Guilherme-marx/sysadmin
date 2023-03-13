@@ -443,7 +443,7 @@ h4 {
 
 
 
-@media (max-width: 415px) {
+@media (max-width: 415px) and (orientation: portrait) {
     body {
         line-height: 1;
         width: 100%;
